@@ -64,7 +64,7 @@ namespace Newsletter.Newsletter
             _period++;
             foreach (Client client in _clientsList)
             {
-                if((client.GetPeriod() % _period) == 0)
+                if(( _period % client.GetPeriod()) == 0)
                 {
                     client.CreateMessage();
                     string message = client.GetMessage();
