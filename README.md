@@ -1,2 +1,2 @@
 # MIASI_Newsletter
-MIASI Projekt Newslettrt - wykład
+MIASI Projekt Newsletter - wykład
