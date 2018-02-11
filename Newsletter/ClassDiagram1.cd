@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Newsletter.Newsletter.Office">
+    <Position X="6.25" Y="0.5" Width="2.75" />
+    <AssociationLine Name="_clientsList" Type="Newsletter.Newsletter.Client" FixedToPoint="true">
+      <Path>
+        <Point X="7.75" Y="3.594" />
+        <Point X="7.75" Y="3.75" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAEAEAACEAAAAECgAAACAAAAAIAAAAAAACAAAAAIA=</HashCode>
+      <FileName>Newsletter\Office.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_sender" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Field Name="_clientsList" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Newsletter.Newsletter.Message.ConcreteMessage01">
+    <Position X="0.75" Y="7.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Newsletter\Message\ConcreteMessage01.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Newsletter.Newsletter.Message.AbstractMessage">
+    <Position X="2.75" Y="4.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAEAAAAABgAAA=</HashCode>
+      <FileName>Newsletter\Message\AbstractMessage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Newsletter.Newsletter.Message.ConcreteMessage02">
+    <Position X="4" Y="7.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Newsletter\Message\ConcreteMessage02.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Newsletter.Newsletter.Department.AbstractDepartment">
+    <Position X="11" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAA=</HashCode>
+      <FileName>Newsletter\Department\AbstractDepartment.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_office" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Newsletter.Newsletter.Department.ConcreteDepartment01">
+    <Position X="9.25" Y="2.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAA=</HashCode>
+      <FileName>Newsletter\Department\ConcreteDepartment01.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Newsletter.Newsletter.Department.ConcreteDepartment02">
+    <Position X="12.5" Y="2.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAA=</HashCode>
+      <FileName>Newsletter\Department\ConcreteDepartment02.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Newsletter.Newsletter.Client">
+    <Position X="6.75" Y="3.75" Width="2" />
+    <AssociationLine Name="_message" Type="Newsletter.Newsletter.Message.AbstractMessage" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="6.75" Y="5.625" />
+        <Point X="6.375" Y="5.625" />
+        <Point X="6.375" Y="5.25" />
+        <Point X="4.75" Y="5.25" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>ACEAAAAACIEAAAAAQAAAACEACIIAAAiIEABAAACAAEE=</HashCode>
+      <FileName>Newsletter\Client.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_message" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Field Name="_newsList" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Newsletter.Newsletter.News">
+    <Position X="11" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACBAAAARQIAAAAAAAAAAAAAgAAAEAAAIEAAAAAAAAAA=</HashCode>
+      <FileName>Newsletter\News.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Newsletter.Newsletter.Sender.AbstractSender">
+    <Position X="3" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Newsletter\Sender\AbstractSender.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Newsletter.Newsletter.Sender.ConcreteSender01">
+    <Position X="1.75" Y="2.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Newsletter\Sender\ConcreteSender01.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Newsletter.Newsletter.Sender.ConcreteSender02">
+    <Position X="4" Y="2.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Newsletter\Sender\ConcreteSender02.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
